@@ -203,9 +203,54 @@ footer ul li{
     margin:0px 10px;
 }
 
+
+
+
+#Contato{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.meio-contato li{
+    margin-bottom: 15px;
+}
+
+.meio-contato li a{
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.last-text{
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}
+
         </style>
 
     </head>
+
+    <body>
 
     <header><!-- inicio Cabecalho -->
         <nav class="navbar navbar-expand-sm navbar-light fixed-top navbar-transparente">
@@ -244,11 +289,7 @@ footer ul li{
         </nav>
       </header><!--/fim Cabecalho -->
 
-     
-
-
-        
-    <body>      
+    
     <div class="base">
         <h1> Perfil </h1>
             <img class="avatar" src="usuario2.png" alt="Avatar">    
@@ -258,6 +299,9 @@ footer ul li{
             <p>Sou um Professor ashafuih asuihiuaf huiashu fiashui fhsaiuh uiash uifahuisfha uiahsui hasuih fasuih fasuihsf uiah asfuihuiasfh uiashui fsah</p>
         </div>
         
+
+        <!----/rodapé-->
+
         <div>
             <h2>Detalhes</h2>
             
@@ -265,35 +309,47 @@ footer ul li{
             <span class="negrito">Idade:</span> <p>34 anos</p>
             <span class="negrito">Localização:</span> <p>Santa Teresa - ES</p>
             
-        </div>
+   
+            <section class="Contato" id="Contato">
+		<div class="meio-contato">
+			<h3>Classix</h3>
+			<h5>Nós envie uma mensagem</h5>
+			<div class="icons">
+				<a href="#"><i class='bx bxl-facebook-square' ></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+				<a href="#"><i class='bx bxl-twitter' ></i></a>
+			</div>
+		</div>
 
+		<div class="meio-contato">
+			<h3>Explore</h3>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#featured">Featured</a></li>
+			<li><a href="#new">New</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</div>
 
-        <footer>
-            <div class="body">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="Nota.png" width="50">
-                    </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="facebook.png"></a>
-                            </li>
-                            <li><a href="#"><img src="twitter.png"></a>
-                            </li>
-                            <li><a href="#"><img src="Instagram.png"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-          </footer>
-            
-        
-    </div>
+		<div class="meio-contato">
+			<h3>Our Services</h3>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Free Shipping</a></li>
+			<li><a href="#">Gift Cards</a></li>
+		</div>
+
+		<div class="meio-contato">
+			<h3>Shopping</h3>
+			<li><a href="#">Clothing Store</a></li>
+			<li><a href="#">Trending Shoes</a></li>
+			<li><a href="#">Accessories</a></li>
+			<li><a href="#">Sale</a></li>
+		</div>
+
+	</section>
+
+	<div class="last-text">
+		<p>Copyright © 2022 All rights reserved | This template is made with  by Tahmid Ahmed</p>
+	</div>
     
-    
-    <!--Experimente por um filtro para deixar a imagem preto
-    e branca filter: grayscale(1); -->
+   
     </body>
 </html>
